@@ -29,7 +29,7 @@ app.use(helmet());
 
 // CORS configuration - allows frontend to communicate with backend
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:5500',
+    origin: process.env.FRONTEND_URL || 'https://apeh-be-charity.onrender.com',
     credentials: true
 }));
 
