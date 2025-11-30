@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # APEH-BE-CHARITY Website
 
 A comprehensive NGO website with integrated payment systems, email services, and form handling.
@@ -217,3 +218,7 @@ MIT License - See LICENSE file for details
 
 **Version:** 1.0.0  
 **Last Updated:** January 2025
+=======
+# APEH-BE-CHARITY
+digital engagemnt platform for nigerian NGOs
+>>>>>>> 10731fb1241cc51936bb865cbe140d56e4c95a46
