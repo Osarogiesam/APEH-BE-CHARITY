@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - APEH-BE-CHARITY</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <!-- Logo for mobile -->
+                <a class="navbar-brand d-lg-none" href="index.html">APEH-BE-CHARITY</a>
+                
+                <!-- Desktop Donate Button -->
+                <a href="#donate" class="btn btn-primary donate-btn d-none d-lg-block">Donate Now</a>
+                
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left navigation items -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About Us</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Center Logo -->
+                    <a class="navbar-brand d-none d-lg-block mx-4" href="index.html">APEH-BE-CHARITY</a>
+                    
+                    <!-- Right navigation items -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <!-- Mobile Donate Button -->
+                        <li class="nav-item d-lg-none">
+                            <a href="#donate" class="nav-link donate-link-mobile">Donate Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="donation-hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Discover how we are making a difference and how you can get involved</h1>
+                        <p class="hero-subtitle">Every second counts. Right now, there's a child without food, a family without shelter, and a community without clean water. Your donation can change that—instantly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-container">
+                        <video class="flood-video" autoplay muted loop playsinline>
+                            <source src="floood video - Made with Clipchamp.mp4" type="video/mp4">
+                            <source src="floood video - Made with Clipchamp.webm" type="video/webm">
+                            <!-- Fallback for browsers that don't support video -->
+                            <div class="video-fallback">
+                                <i class="fas fa-play-circle"></i>
+                                <p>Watch our impact video</p>
+                            </div>
+                        </video>
+                        <div class="video-overlay">
+                            <button class="play-button" onclick="toggleVideo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <p class="video-caption">See how floods affect communities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card">
+                        <h2 class="stat-number">300K+</h2>
+                        <p class="stat-label">Food supply</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card">
+                        <h2 class="stat-number">400K+</h2>
+                        <p class="stat-label">School Built</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card">
+                        <h2 class="stat-number">12K+</h2>
+                        <p class="stat-label">Home restored</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Words from the Founder Section -->
+    <section class="founder-section">
+        <div class="container">
+            <h2 class="section-title text-center">Words from the Founder</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="founder-image">
+                        <img src="childandtable.jpg" alt="Apeh Simon - Founder & Chairman" class="img-fluid">
+                        <div class="founder-info">
+                            <h4>Apeh Simon</h4>
+                            <p>Founder & Chairman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="founder-content">
+                        <h3>Families Are Suffering. You Can Help Rebuild Hope.</h3>
+                        <p>Recent floods have devastated communities across Nigeria, leaving thousands of families homeless and without basic necessities. At APEH-BE Charity, we're on the ground providing immediate relief and long-term support.</p>
+                        <p>Your donation helps us:</p>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-home"></i> Rebuild homes and classrooms</li>
+                            <li><i class="fas fa-tint"></i> Provide clean water and supplies</li>
+                            <li><i class="fas fa-heart"></i> Restore hope to affected families</li>
+                            <li><i class="fas fa-seedling"></i> Support sustainable recovery efforts</li>
+                        </ul>
+                        <blockquote class="founder-quote">
+                            "When disaster strikes, humanity answers."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Help - Donation Form Section -->
+    <section id="donate" class="donation-form-section">
+        <div class="container">
+            <h2 class="section-title text-center">How to Help!</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="donation-card">
+                        <h3 class="form-title">Donator Details</h3>
+                        <form class="donation-form" id="donationForm" id="newsletterForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="amount" class="form-label">Your Amount *</label>
+                                    <input type="text" class="form-control" id="amount" placeholder="Enter amount" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="project" class="form-label">Project *</label>
+                                    <select class="form-select" id="project" required>
+                                        <option value="">Select a project</option>
+                                        <option value="flood-relief">Flood Relief</option>
+                                        <option value="education">Education Support</option>
+                                        <option value="water-systems">Water Systems</option>
+                                        <option value="housing">Housing Development</option>
+                                        <option value="general">General Donation</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Payment Method Selection -->
+                            <div class="mb-4">
+                                <label class="form-label">Payment Method *</label>
+                                <div class="payment-methods">
+                                    <!-- Flutterwave Payment Option -->
+                                    <div class="payment-option featured">
+                                        <input type="radio" id="flutterwave" name="paymentMethod" value="flutterwave" required>
+                                        <label for="flutterwave" class="payment-label">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <span>Flutterwave</span>
+                                            <small>Cards, Bank, Mobile Money</small>
+                                        </label>
+                                    </div>
+                                    <!-- Paystack Payment Option -->
+                                    <div class="payment-option featured">
+                                        <input type="radio" id="paystack" name="paymentMethod" value="paystack" required>
+                                        <label for="paystack" class="payment-label">
+                                            <i class="fas fa-credit-card"></i>
+                                            <span>Paystack</span>
+                                            <small>Cards, Bank Transfer</small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Flutterwave Payment Container -->
+                            <div id="flutterwave-payment-element" class="nigerian-payment-container" style="display: none;">
+                                <div class="payment-info">
+                                    <h5>Flutterwave Payment</h5>
+                                    <p>Pay with cards, bank transfer, or mobile money. Secure and fast payment processing.</p>
+                                    <button type="button" class="btn btn-primary" onclick="initiateFlutterwavePayment()">
+                                        <i class="fas fa-mobile-alt"></i> Pay with Flutterwave
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Paystack Payment Container -->
+                            <div id="paystack-payment-element" class="nigerian-payment-container" style="display: none;">
+                                <div class="payment-info">
+                                    <h5>Paystack Payment</h5>
+                                    <p>Pay with cards or bank transfer. Nigeria's leading payment platform.</p>
+                                    <button type="button" class="btn btn-primary" onclick="initiatePaystackPayment()">
+                                        <i class="fas fa-credit-card"></i> Pay with Paystack
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address *</label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number (optional)">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="country" class="form-label">Country *</label>
+                                    <input type="text" class="form-control" id="country" placeholder="Enter your country" value="Nigeria" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="zipCode" class="form-label">Zip Code *</label>
+                                    <input type="text" class="form-control" id="zipCode" placeholder="Enter zip code" required>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg donation-submit-btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    How do I donate from my country?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can donate from anywhere in the world using our secure online form. We accept major credit cards, PayPal, and bank transfers. All transactions are processed securely.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    How do I donate from my country?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We have partnerships with local organizations in many countries. Contact us directly for information about local donation methods in your area.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    How do I donate from my country?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we provide tax receipts for all donations. You'll receive an email confirmation and tax receipt within 24 hours of your donation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    How do I donate from my country?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We use 95% of all donations directly for our programs. Only 5% goes to administrative costs, ensuring maximum impact for your contribution.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="faq-contact-card">
+                        <div class="faq-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Have other questions?</h4>
+                        <p>We're here to help! Send us your questions and we'll get back to you within 24 hours.</p>
+                        <button class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-brand">APEH-BE-CHARITY</h5>
+                    <p class="footer-text">We are dedicated to building resilience in Nigeria through sustainable development, education, and community empowerment.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="programs.html">Project</a></li>
+                        <li><a href="news.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Contact us</h6>
+                    <p class="footer-text">+2347066666666</p>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <h6 class="footer-title">APEH-BE-CHARITY</h6>
+                    <p class="footer-text">Subscribe to our newsletter</p>
+                    <form name="submit-to-google-sheet" class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" name="Email" class="form-control" id="newsletterEmail" placeholder="Your email" required>
+                            <button class="btn btn-primary" type="submit">Sign up</button>
+                            <span id="msg"></span>
+                        </div>
+                    </form>
+                    <p class="privacy-text">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            <hr class="footer-divider"> 
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright">Copyright © 2025 APEH-BE-CHARITY. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flutterwave JS -->
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <!-- Paystack JS -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/payments.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/register-sw.js"></script>
+
+</body>
+</html>

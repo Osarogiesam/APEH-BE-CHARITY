@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEH-BE-CHARITY - Making an Immediate Impact</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <!-- Logo for mobile -->
+                <a class="navbar-brand d-lg-none" href="#home">APEH-BE-CHARITY</a>
+                
+                <!-- Desktop Donate Button -->
+                <a href="donate.html" class="btn btn-primary donate-btn d-none d-lg-block">Donate Now</a>
+                
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left navigation items -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Center Logo -->
+                    <a class="navbar-brand d-none d-lg-block mx-4" href="#home">APEH-BE-CHARITY</a>
+                    
+                    <!-- Right navigation items -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="volunteer.html">Get Involved</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Mobile Donate Button -->
+                        <li class="nav-item d-lg-none">
+                            <a href="donate.html" class="nav-link donate-link-mobile">Donate Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="hero-title">Make an Immediate Impact</h1>
+                    <p class="hero-subtitle">Every second counts. Right now, there's a child without food, a family without shelter, and a community without clean water. Your donation can change that—instantly.</p>
+                    <a href="donate.html" class="btn btn-primary btn-lg hero-cta">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card">
+                        <h2 class="stat-number">300K+</h2>
+                        <p class="stat-label">Food Supply</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card">
+                        <h2 class="stat-number">400K+</h2>
+                        <p class="stat-label">School Built</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-card">
+                        <h2 class="stat-number">12K+</h2>
+                        <p class="stat-label">Home nurtured</p>
+                    </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- What We Are Doing Section -->
+    <section id="about" class="what-we-do-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">What We are Doing</h2>
+                    <h3 class="subsection-title">We're Building Resilience in Nigeria</h3>
+                    <p class="section-text">We empower those, plant trees, teach urban farming, and install water systems. We're building a more resilient Nigeria, one community at a time.</p>
+                    <div class="button-group">
+                        <a href="about.html" class="btn btn-outline-primary">Learn more</a>
+                        <a href="donate.html" class="btn btn-primary">Donate now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-stack">
+                        <img src="children.jpg" alt="Children with support sign" class="img-fluid stack-img-1">
+                        <img src="childandtable.jpg" alt="Child drinking water" class="img-fluid stack-img-2">
+                    </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title text-center">Featured Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-card">
+                        <img src="childrengroup.jpg" alt="Building Planet-Resilient Homes" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Building Planet-Resilient Homes in Benue City</h5>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                            </div>
+                            <div class="funding-info">
+                                <span class="amount-raised">Amount raised: ₦45,000</span>
+                                <span class="target-goal">Target goal: ₦60,000</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary">Read more</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-card">
+                        <img src="children.jpg" alt="Urban Area Initiative" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Urban Area Initiative</h5>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 60%"></div>
+                            </div>
+                            <div class="funding-info">
+                                <span class="amount-raised">Amount raised: ₦30,000</span>
+                                <span class="target-goal">Target goal: ₦50,000</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary">Read more</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-card">
+                        <img src="childandtable.jpg" alt="Clean Drinking Water" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Clean Drinking Water for Every Community</h5>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                            </div>
+                            <div class="funding-info">
+                                <span class="amount-raised">Amount raised: ₦68,000</span>
+                                <span class="target-goal">Target goal: ₦80,000</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-end mt-4">
+                <a href="#projects" class="btn btn-outline-primary">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title text-center">Blog</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+            <div class="blog-card">
+                        <img src="children.jpg" alt="Blog post" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">From Water to Life: How Water Changes Everything: A Pragmatic</h5>
+                            <p class="card-text">Discover how access to clean water transforms communities and creates lasting change.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Read more</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+            <div class="blog-card">
+                        <img src="childandtable.jpg" alt="Blog post" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">From Water to Life: How Water Changes Everything: A Pragmatic</h5>
+                            <p class="card-text">Learn about our sustainable farming initiatives and their impact on food security.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Read more</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+            <div class="blog-card">
+                        <img src="childrengroup.jpg" alt="Blog post" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">From Water to Life: How Water Changes Everything: A Pragmatic</h5>
+                            <p class="card-text">Education is the foundation of change. See how we're building schools and futures.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Read more</a>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+            <div class="blog-card">
+                        <img src="children.jpg" alt="Blog post" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">From Water to Life: How Water Changes Everything: A Pragmatic</h5>
+                            <p class="card-text">Community resilience starts with sustainable practices and local empowerment.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Volunteers Section -->
+    <section class="volunteers-section">
+        <div class="container">
+            <h2 class="section-title text-center">Meet Our Volunteers</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="volunteer-card">
+                        <img src="childandtable.jpg" alt="Agada Enejo" class="volunteer-img">
+                        <h5 class="volunteer-name">Agada Enejo</h5>
+                        <p class="volunteer-role">Founder & Chairman</p>
+                        <p class="volunteer-quote">"Building communities through compassion and action."</p>
+                    </div>
+            </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="volunteer-card">
+                        <img src="children.jpg" alt="Grace Brown" class="volunteer-img">
+                        <h5 class="volunteer-name">Grace Brown</h5>
+                        <p class="volunteer-role">Co-founder & Lead Architect</p>
+                        <p class="volunteer-quote">"Designing sustainable solutions for lasting impact."</p>
+                    </div>
+            </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="volunteer-card">
+                        <img src="childrengroup.jpg" alt="Mr. Monday Smith" class="volunteer-img">
+                        <h5 class="volunteer-name">Mr. Monday Smith</h5>
+                        <p class="volunteer-role">Health Coordinator & Researcher</p>
+                        <p class="volunteer-quote">"Health is wealth, and every life matters."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-card">
+                        <h3 class="contact-title">Let's Work Together!</h3>
+                        <p class="contact-subtitle">We're always open to new ideas and collaborations. Let's make a difference together.</p>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send</button>
+                            </div>
+        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-brand">APEH-BE-CHARITY</h5>
+                    <p class="footer-text">We are dedicated to building resilience in Nigeria through sustainable development, education, and community empowerment.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="programs.html">Project</a></li>
+                        <li><a href="news.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Contact us</h6>
+                    <p class="footer-text">+2347066666666</p>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <h6 class="footer-title">APEH-BE-CHARITY</h6>
+                    <p class="footer-text">Subscribe to our newsletter</p>
+                    <form name="submit-to-google-sheet" class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" name="Email" class="form-control" id="newsletterEmail" placeholder="Your email" required>
+                            <button class="btn btn-primary" type="submit">Sign up</button>
+                            <span id="msg"></span>
+                        </div>
+                    </form>
+                    <p class="privacy-text">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            <hr class="footer-divider"> 
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright">Copyright © 2025 APEH-BE-CHARITY. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/newsletter.js"></script>
+</body>
+</html>

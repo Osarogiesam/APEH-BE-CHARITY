@@ -1,0 +1,25 @@
+# ===== APEH-BE-CHARITY API CONFIGURATION =====
+# Server Configuration
+PORT=3000
+NODE_ENV=development
+FRONTEND_URL=http://localhost:5500
+BACKEND_URL=http://localhost:3000
+ORG_EMAIL=osarogie.idumwonyi@eng.uniben.edu
+
+# Database Configuration
+# For local MongoDB: mongodb://localhost:27017/apeh-charity
+# For MongoDB Atlas: mongodb+srv://username:password@cluster.mongodb.net/apeh-charity
+MONGODB_URI=mongodb://localhost:27017/apeh-charity
+
+# Flutterwave Configuration
+FLUTTERWAVE_PUBLIC_KEY=FLWPUBK_TEST-5b3698877619a238fe7db400278fe87b-X
+FLUTTERWAVE_SECRET_KEY=FLWSECK_TEST-1f76e2a61ae6a183239ddd7787a59174-X
+FLUTTERWAVE_ENCRYPTION_KEY=FLWSECK_TEST1cd36ef36080
+FLUTTERWAVE_SECRET_HASH=your_flutterwave_secret_hash_here
+
+# Paystack Configuration
+PAYSTACK_PUBLIC_KEY=pk_test_b1698818dbc9f87189f44c241664e21b8b56c7ad
+PAYSTACK_SECRET_KEY=sk_test_23a8d2859bec3ae435ccc154a0e5cf9c5951183b
+
+# Brevo (Sendinblue) Configuration
+BREVO_API_KEY=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

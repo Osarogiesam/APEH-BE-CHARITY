@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Stories - APEH-BE-CHARITY</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <!-- Logo for mobile -->
+                <a class="navbar-brand d-lg-none" href="index.html">APEH-BE-CHARITY</a>
+                
+                <!-- Desktop Donate Button -->
+                <a href="donate.html" class="btn btn-primary donate-btn d-none d-lg-block">Donate Now</a>
+                
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left navigation items -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Center Logo -->
+                    <a class="navbar-brand d-none d-lg-block mx-4" href="index.html">APEH-BE-CHARITY</a>
+                    
+                    <!-- Right navigation items -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="volunteer.html">Get Involved</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Mobile Donate Button -->
+                        <li class="nav-item d-lg-none">
+                            <a href="donate.html" class="nav-link donate-link-mobile">Donate Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="news-hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="hero-title">Latest Stories & Updates</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Navigation -->
+    <section class="content-nav-section">
+        <div class="container">
+            <div class="content-nav">
+                <ul class="nav nav-pills justify-content-center" id="contentTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">
+                            All
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="blog-tab" data-bs-toggle="pill" data-bs-target="#blog" type="button" role="tab">
+                            Blog
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="news-tab" data-bs-toggle="pill" data-bs-target="#news" type="button" role="tab">
+                            News
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="press-tab" data-bs-toggle="pill" data-bs-target="#press" type="button" role="tab">
+                            Press Releases
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="field-tab" data-bs-toggle="pill" data-bs-target="#field" type="button" role="tab">
+                            Field Reports
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Story Section -->
+    <section class="featured-story-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="featured-image">
+                        <img src="children.jpg" alt="Featured Story" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="featured-content">
+                        <h2>Empowering Communities Through Sustainable Agriculture</h2>
+                        <p>Learn how our programs are transforming lives by promoting sustainable farming practices in rural communities. Our agricultural development initiatives have helped over 300 farmers increase their crop yields by 150% while maintaining environmental sustainability.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="recent-posts-section">
+        <div class="container">
+            <h2 class="section-title">Recent Posts</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="childrengroup.jpg" alt="Disaster Relief" class="img-fluid">
+                        </div>
+                        <div class="post-content">
+                            <h3>Building Resilience: Disaster Relief Efforts in Flood-Affected Areas</h3>
+                            <p>Our team is on the ground providing essential aid and support to families impacted by recent floods. Learn about our emergency response efforts and how we're helping communities rebuild.</p>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> July 10, 2024</span>
+                                <span class="post-category">Field Reports</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="children.jpg" alt="Healthcare Initiative" class="img-fluid">
+                        </div>
+                        <div class="post-content">
+                            <h3>Community Health Initiative: Expanding Access to Healthcare</h3>
+                            <p>We're working to improve healthcare access in underserved communities through mobile clinics and health education programs. Discover how we're making healthcare more accessible.</p>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> July 5, 2024</span>
+                                <span class="post-category">Programs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="childandtable.jpg" alt="Education Program" class="img-fluid">
+                        </div>
+                        <div class="post-content">
+                            <h3>Education for All: Supporting Children's Development</h3>
+                            <p>Investing in education is key to breaking the cycle of poverty. Learn about our programs supporting children's education and development in rural communities.</p>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> June 28, 2024</span>
+                                <span class="post-category">Blog</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="children.jpg" alt="Advocacy Work" class="img-fluid">
+                        </div>
+                        <div class="post-content">
+                            <h3>Advocating for Change: Policy Updates and Advocacy Work</h3>
+                            <p>Stay informed about our advocacy efforts and policy updates aimed at creating lasting change in communities across Nigeria.</p>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> June 20, 2024</span>
+                                <span class="post-category">Press Releases</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="childandtable.jpg" alt="Volunteer Spotlight" class="img-fluid">
+                        </div>
+                        <div class="post-content">
+                            <h3>Volunteer Spotlight: Meet Sarah, Our Dedicated Field Coordinator</h3>
+                            <p>Get to know Sarah, a key member of our team, and her inspiring work in the field. Learn about her journey and the impact she's making in communities.</p>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> June 15, 2024</span>
+                                <span class="post-category">Blog</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="childrengroup.jpg" alt="Partnerships" class="img-fluid">
+                        </div>
+                        <div class="post-content">
+                            <h3>Partnerships for Progress: Collaborating with Local Organizations</h3>
+                            <p>Collaboration is essential. Discover how we partner with local organizations to maximize our impact and create sustainable change.</p>
+                            <div class="post-meta">
+                                <span class="post-date"><i class="fas fa-calendar"></i> June 10, 2024</span>
+                                <span class="post-category">News</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="container">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <span class="page-link">...</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">10</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content text-center">
+                <h2>Subscribe to Our Updates</h2>
+                <p>Stay up-to-date with our latest news and stories from the field.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email" required>
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+     <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-brand">APEH-BE-CHARITY</h5>
+                    <p class="footer-text">We are dedicated to building resilience in Nigeria through sustainable development, education, and community empowerment.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="programs.html">Project</a></li>
+                        <li><a href="news.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Contact us</h6>
+                    <p class="footer-text">+2347066666666</p>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <h6 class="footer-title">APEH-BE-CHARITY</h6>
+                    <p class="footer-text">Subscribe to our newsletter</p>
+                    <form name="submit-to-google-sheet" class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" name="Email" class="form-control" id="newsletterEmail" placeholder="Your email" required>
+                            <button class="btn btn-primary" type="submit">Sign up</button>
+                            <span id="msg"></span>
+                        </div>
+                    </form>
+                    <p class="privacy-text">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            <hr class="footer-divider"> 
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright">Copyright © 2025 APEH-BE-CHARITY. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/newsletter.js"></script>
+</body>
+</html>

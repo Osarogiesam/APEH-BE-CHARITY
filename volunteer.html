@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - APEH-BE-CHARITY</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <!-- Logo for mobile -->
+                <a class="navbar-brand d-lg-none" href="index.html">APEH-BE-CHARITY</a>
+                
+                <!-- Desktop Donate Button -->
+                <a href="donate.html" class="btn btn-primary donate-btn d-none d-lg-block">Donate Now</a>
+                
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left navigation items -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Center Logo -->
+                    <a class="navbar-brand d-none d-lg-block mx-4" href="index.html">APEH-BE-CHARITY</a>
+                    
+                    <!-- Right navigation items -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="volunteer.html">Get Involved</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Mobile Donate Button -->
+                        <li class="nav-item d-lg-none">
+                            <a href="donate.html" class="nav-link donate-link-mobile">Donate Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="volunteer-hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="hero-title">Become a Force for Good</h1>
+                    <p class="hero-subtitle">Join our mission to rebuild lives and restore hope in communities across the globe.</p>
+                    <a href="#volunteer-signup" class="btn btn-primary btn-lg hero-cta">Volunteer Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering Opportunities Section -->
+    <section class="opportunities-section">
+        <div class="container">
+            <h2 class="section-title text-center">Volunteering Opportunities</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Community Outreach</h3>
+                        <p>Engage directly with communities, providing support and resources to help them thrive and develop sustainably.</p>
+                        <ul class="opportunity-list">
+                            <li>Field visits and assessments</li>
+                            <li>Community engagement activities</li>
+                            <li>Resource distribution</li>
+                            <li>Local partnership building</li>
+                        </ul>
+                        <a href="#volunteer-signup" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Event Support</h3>
+                        <p>Assist in organizing and running events that support our cause and raise awareness in the community.</p>
+                        <ul class="opportunity-list">
+                            <li>Event planning and coordination</li>
+                            <li>Logistics management</li>
+                            <li>Volunteer coordination</li>
+                            <li>Marketing and promotion</li>
+                        </ul>
+                        <a href="#volunteer-signup" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Fundraising Advocate</h3>
+                        <p>Help raise funds through various campaigns and initiatives to support our programs and projects.</p>
+                        <ul class="opportunity-list">
+                            <li>Campaign development</li>
+                            <li>Donor engagement</li>
+                            <li>Social media advocacy</li>
+                            <li>Grant writing support</li>
+                        </ul>
+                        <a href="#volunteer-signup" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Digital Ambassador</h3>
+                        <p>Promote our mission online and engage with our digital community to spread awareness and support.</p>
+                        <ul class="opportunity-list">
+                            <li>Content creation</li>
+                            <li>Social media management</li>
+                            <li>Online community building</li>
+                            <li>Digital marketing support</li>
+                        </ul>
+                        <a href="#volunteer-signup" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Get Involved Section -->
+    <section class="get-involved-section">
+        <div class="container">
+            <h2 class="section-title text-center">How to Get Involved</h2>
+            <div class="involvement-tabs">
+                <ul class="nav nav-pills justify-content-center" id="involvementTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="volunteer-tab" data-bs-toggle="pill" data-bs-target="#volunteer" type="button" role="tab">
+                            <i class="fas fa-users"></i> Volunteer
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="campaigns-tab" data-bs-toggle="pill" data-bs-target="#campaigns" type="button" role="tab">
+                            <i class="fas fa-calendar"></i> Join Campaigns
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="events-tab" data-bs-toggle="pill" data-bs-target="#events" type="button" role="tab">
+                            <i class="fas fa-hand-pointer"></i> Attend Events
+                        </button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="involvementTabContent">
+                    <div class="tab-pane fade show active" id="volunteer" role="tabpanel">
+                        <div class="tab-content-inner">
+                            <h3>Volunteer with Us</h3>
+                            <p>Join our team of dedicated volunteers and make a real difference in communities across Nigeria. We offer various opportunities that match your skills and interests.</p>
+                            <div class="volunteer-benefits">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Flexible scheduling</li>
+                                            <li><i class="fas fa-check"></i> Skill development opportunities</li>
+                                            <li><i class="fas fa-check"></i> Community impact</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Training and support</li>
+                                            <li><i class="fas fa-check"></i> Networking opportunities</li>
+                                            <li><i class="fas fa-check"></i> Recognition and appreciation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="campaigns" role="tabpanel">
+                        <div class="tab-content-inner">
+                            <h3>Join Our Campaigns</h3>
+                            <p>Participate in our advocacy campaigns and help us raise awareness about important issues affecting communities in Nigeria.</p>
+                            <div class="campaign-list">
+                                <div class="campaign-item">
+                                    <h4>Clean Water Campaign</h4>
+                                    <p>Advocate for access to clean water in underserved communities.</p>
+                                </div>
+                                <div class="campaign-item">
+                                    <h4>Education for All</h4>
+                                    <p>Support our efforts to ensure quality education for every child.</p>
+                                </div>
+                                <div class="campaign-item">
+                                    <h4>Women Empowerment</h4>
+                                    <p>Join our campaign to empower women through skills training.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="events" role="tabpanel">
+                        <div class="tab-content-inner">
+                            <h3>Attend Our Events</h3>
+                            <p>Join us at various events throughout the year to learn more about our work and connect with like-minded individuals.</p>
+                            <div class="event-list">
+                                <div class="event-item">
+                                    <h4>Annual Gala Dinner</h4>
+                                    <p>Celebrate our achievements and support our mission.</p>
+                                </div>
+                                <div class="event-item">
+                                    <h4>Community Workshops</h4>
+                                    <p>Learn about sustainable development and community building.</p>
+                                </div>
+                                <div class="event-item">
+                                    <h4>Volunteer Appreciation Day</h4>
+                                    <p>Recognize and celebrate our amazing volunteers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="upcoming-events-section">
+        <div class="container">
+            <h2 class="section-title text-center">Upcoming Events</h2>
+            <div class="events-table">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Event</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Community Outreach Day</td>
+                                <td>July 15, 2024</td>
+                                <td>Local Community Center</td>
+                                <td><a href="#" class="btn btn-sm btn-primary">Register</a></td>
+                            </tr>
+                            <tr>
+                                <td>Donation Drive</td>
+                                <td>August 5, 2024</td>
+                                <td>City Park</td>
+                                <td><a href="#" class="btn btn-sm btn-primary">Register</a></td>
+                            </tr>
+                            <tr>
+                                <td>Awareness Campaign</td>
+                                <td>September 20, 2024</td>
+                                <td>Online</td>
+                                <td><a href="#" class="btn btn-sm btn-primary">Register</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Sign-Up Section -->
+    <section id="volunteer-signup" class="volunteer-signup-section">
+        <div class="container">
+            <h2 class="section-title text-center">Volunteer Sign-Up</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="signup-form-container">
+                        <form class="volunteer-form" id="volunteerForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="fullName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone *</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="city" class="form-label">City *</label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="interests" class="form-label">Interests *</label>
+                                <textarea class="form-control" id="interests" rows="3" placeholder="Describe your interests and how you'd like to help" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="availability" class="form-label">Availability *</label>
+                                <textarea class="form-control" id="availability" rows="3" placeholder="Describe your availability and preferred time commitment" required></textarea>
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title text-center">Volunteer Testimonials</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="children.jpg" alt="Sarah M." class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <h4>Sarah M.</h4>
+                            <p>"Volunteering with APEH-BE-CHARITY has been incredibly rewarding. I've met amazing people and made a real difference in the community. The support and guidance from the team are fantastic."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="childandtable.jpg" alt="David L." class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <h4>David L.</h4>
+                            <p>"The support and guidance from the team are fantastic. I feel valued and empowered to contribute meaningfully. It's been an amazing experience that has enriched my life."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="childrengroup.jpg" alt="Emily R." class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <h4>Emily R.</h4>
+                            <p>"I've gained so much experience and confidence through my volunteer work here. The impact we're making together is truly inspiring, and I'm proud to be part of this mission."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Ready to Make a Difference?</h2>
+                <div class="cta-buttons">
+                    <a href="#volunteer-signup" class="btn btn-primary btn-lg">Volunteer Today</a>
+                    <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-brand">APEH-BE-CHARITY</h5>
+                    <p class="footer-text">We are dedicated to building resilience in Nigeria through sustainable development, education, and community empowerment.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="programs.html">Project</a></li>
+                        <li><a href="news.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-title">Contact us</h6>
+                    <p class="footer-text">+2347066666666</p>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <h6 class="footer-title">APEH-BE-CHARITY</h6>
+                    <p class="footer-text">Subscribe to our newsletter</p>
+                    <form name="submit-to-google-sheet" class="newsletter-form" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" name="Email" class="form-control" id="newsletterEmail" placeholder="Your email" required>
+                            <button class="btn btn-primary" type="submit">Sign up</button>
+                            <span id="msg"></span>
+                        </div>
+                    </form>
+                    <p class="privacy-text">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+            <hr class="footer-divider"> 
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="copyright">Copyright © 2025 APEH-BE-CHARITY. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/volunteer.js"></script>
+    <script src="js/newsletter.js"></script>
+</body>
+</html>
