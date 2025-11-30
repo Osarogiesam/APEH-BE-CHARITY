@@ -6,7 +6,7 @@
 
 const NEWSLETTER_API_BASE_URL = typeof API_BASE_URL !== 'undefined'
     ? API_BASE_URL
-    : 'http://localhost:3000/api';
+    : 'https://apeh-be.onrender.com';
 
 async function runHybridSubmit(options) {
     if (typeof window.submitFormWithFallbacks === 'function') {
