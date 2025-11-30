@@ -4,8 +4,7 @@
  */
 
 // API Base URL - Update this to your backend URL
-const API_BASE_URL = 'http://localhost:3000/api';
-
+const API_BASE_URL = 'https://apeh-be.onrender.com';
 async function runHybridSubmit(options) {
     if (typeof window.submitFormWithFallbacks === 'function') {
         return window.submitFormWithFallbacks(options);
