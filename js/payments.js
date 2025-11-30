@@ -5,8 +5,7 @@
  */
 
 // API Base URL - Update this to your backend URL
-const API_BASE_URL = 'http://localhost:3000/api';
-
+const API_BASE_URL = 'https://apeh-be.onrender.com';
 // Flutterwave Public Key (from environment or config)
 const FLUTTERWAVE_PUBLIC_KEY = 'FLWPUBK_TEST-5b3698877619a238fe7db400278fe87b-X';
 
