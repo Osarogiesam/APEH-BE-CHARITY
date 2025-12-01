@@ -5,7 +5,7 @@
  */
 
 // API Base URL - Update this to your backend URL
-const API_BASE_URL = 'apeh-be-charitable-foundation-api.onrender.com';
+const API_BASE_URL = 'apeh-be-charitable-foundation-api.onrender.com/api';
 // Flutterwave Public Key (from environment or config)
 const FLUTTERWAVE_PUBLIC_KEY = 'FLWPUBK_TEST-5b3698877619a238fe7db400278fe87b-X';
 
