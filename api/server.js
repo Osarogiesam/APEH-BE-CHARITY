@@ -68,7 +68,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`🚀 APEH-BE-CHARITY API Server running on port ${PORT}`);
     console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`🌐 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:5500'}`);
+    console.log(`🌐 Frontend URL: ${process.env.FRONTEND_URL || 'https://apeh-be-charity.onrender.com'}`);
     console.log(`💳 Payment Gateways: Flutterwave & Paystack`);
     console.log(`📧 Email Service: Brevo`);
 });
