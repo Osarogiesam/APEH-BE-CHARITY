@@ -6,7 +6,7 @@
 
 const NEWSLETTER_API_BASE_URL = typeof API_BASE_URL !== 'undefined'
     ? API_BASE_URL
-    : 'https://apeh-be-charitable-foundation-api.onrender.com';
+    : 'apeh-be-charitable-foundation-api.onrender.com';
 
 async function runHybridSubmit(options) {
     if (typeof window.submitFormWithFallbacks === 'function') {
