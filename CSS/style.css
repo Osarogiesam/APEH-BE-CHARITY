@@ -81,8 +81,8 @@ a:hover {
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 0.5rem;
+    font-weight: 500;
     color: var(--primary-brown) !important;
     text-decoration: none;
     transition: color 0.3s ease;
