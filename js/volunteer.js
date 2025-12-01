@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // API Base URL
-const API_BASE_URL = 'https://apeh-be-charitable-foundation-api.onrender.com';
+const API_BASE_URL = 'apeh-be-charitable-foundation-api.onrender.com';
 
 async function runHybridSubmit(options) {
     if (typeof window.submitFormWithFallbacks === 'function') {
